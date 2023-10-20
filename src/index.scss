@@ -59,7 +59,7 @@ body {
     align-items: start;
   }
 
-  .personal{
+  .personal {
     padding-bottom: 128px;
   }
 
@@ -166,11 +166,186 @@ body {
     }
 
     //accaunt-map
-    &-map{
+    &-map {
       width: 446px;
       height: 208px;
     }
   }
+
+  .accauntData {
+    padding: 40px 40px 44px 36px;
+    background-color: #FFF;
+    max-width: 41%;
+    flex-basis: 41%;
+    border-radius: 5px;
+
+    //accauntData__title
+    &__title {
+      color: #181B20;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 140.625%;
+      margin-bottom: 24px;
+    }
+
+    //accauntData-tit
+    &-tit {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+
+      //accauntData-tit__text
+      &__text {
+        color: #7C92A8;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140.625%;
+      }
+
+      //accauntData-tit__line
+      &__line {
+        border-bottom: 1px solid #CFD9DE;
+        width: 255px;
+      }
+    }
+
+    //accauntData-persData
+    &-persData {
+
+      .group {
+
+        //group__title
+        &__title {
+          color: #181B20;
+          font-size: 14px;
+          font-weight: 400;
+          display: block;
+          margin-bottom: 4px;
+
+          //group__title--red
+          &--red {
+            color: #E7263D;
+            display: inline-block;
+          }
+
+          //group__title--link
+          &--link {
+            color: #3D7BF3;
+            display: inline-block;
+          }
+        }
+
+        //group__input
+        &__input {
+          width: 207px;
+          height: 40px;
+          outline: none;
+          border-radius: 5px;
+          border: 1px solid #CFD9DE;
+          background: #FFF;
+          padding-left: 5px;
+        }
+
+        &--long {
+          margin: 9px 0 16px 0;
+
+          .group__input {
+            width: 446px;
+          }
+        }
+
+        //group--vk
+        &--vk {
+          margin-top: 16px;
+
+          .group__input {
+            width: 437px;
+            padding-left: 14px;
+          }
+        }
+      }
+
+      //accauntData-persData__birthday
+      &__birthday {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 59px;
+        gap: 0 10px;
+
+
+
+        .birthday {
+
+          //birthday__img
+          &__img {
+            width: 28px;
+            height: 20px;
+            margin: 20px 0 0 2px;
+          }
+
+          //birthday__text
+          &__text {
+            color: #7C92A8;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 20px;
+          }
+        }
+
+        .group__input {
+          width: 213px;
+        }
+      }
+
+      //accauntData-persData__btns
+      &__btns {
+        margin: 37px 0 0 129px;
+        display: flex;
+        justify-content: space-between;
+
+        .btns {
+
+          //btns__cancel
+          &__cancel {
+            color: #312D21;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 100%;
+            padding: 13px 16px;
+            border-radius: 5px;
+            border: 1px solid #BDCCD4;
+            background: #FFF;
+          }
+
+          //btns__save
+          &__save {
+            padding: 13px 31px;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 100%;
+            border-radius: 5px;
+            background: #3D7BF3;
+            border: none;
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
 
   .empty {
     max-width: 28%;
