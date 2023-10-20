@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-img{
+img {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -39,13 +39,141 @@ body {
   src: url('../src/fonts/Roboto-Regular.ttf');
   font-weight: 400;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../src/fonts/Roboto-Medium.ttf');
   font-weight: 500;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../src/fonts/Roboto-Bold.ttf');
   font-weight: 700;
+}
+
+.main {
+  background-color: #F6F8FA;
+
+  .wrapper {
+    align-items: start;
+  }
+
+  .personal{
+    padding-bottom: 128px;
+  }
+
+  .accaunt {
+    padding: 40px 40px 40px 36px;
+    background-color: #FFF;
+    max-width: 41%;
+    flex-basis: 41%;
+    border-radius: 5px;
+
+    //accaunt__title
+    &__title {
+      color: #181B20;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 140.625%;
+      margin-bottom: 23px;
+    }
+
+    //accaunt-dataChange
+    &-dataChange {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 18px;
+
+      //accaunt-dataChange__text
+      &__text {
+        color: #7C92A8;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140.625%;
+      }
+
+      //accaunt-dataChange__btn
+      &__btn {
+        color: #312D21;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 100%;
+        padding: 9px 10px;
+        background-color: #FFF;
+        border: 1px solid #BDCCD4;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      //accaunt-dataChange--address
+      &--address {
+        margin-top: 16px;
+      }
+    }
+
+    //accaunt-data
+    &-data {
+      margin-bottom: 24px;
+
+      //accaunt-data__text
+      &__text {
+        color: #181B20;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140.625%;
+
+        //accaunt-data__text--bold
+        &--bold {
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+      }
+
+      //accaunt-data__link
+      &__link {
+        color: #3D7BF3;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration-line: underline;
+      }
+    }
+
+    //accaunt-column
+    &-column {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 34px;
+
+      .accaunt-data {
+        max-width: 57%;
+        flex-basis: 57%;
+
+        &:first-child {
+          max-width: 31%;
+          flex-basis: 31%;
+        }
+      }
+    }
+
+    //accaunt__address
+    &__address {
+      color: #181B20;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140.625%;
+      margin-bottom: 10px;
+    }
+
+    //accaunt-map
+    &-map{
+      width: 446px;
+      height: 208px;
+    }
+  }
+
+  .empty {
+    max-width: 28%;
+    flex-basis: 28%;
+  }
 }

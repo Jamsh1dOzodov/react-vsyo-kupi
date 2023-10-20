@@ -23,7 +23,7 @@ const Header = () => {
                                     <Link className='header-left__phone' to="tel:+88009008888">8 800 900-88-88</Link>
                                     <div className="header-left__selectCity">
                                         <select className='header-left__select' name="Город" id="city">
-                                            <option className='header-left__city' value="Красноярск" selected>Красноярск</option>
+                                            <option className='header-left__city' value="Красноярск">Красноярск</option>
                                             <option className='header-left__city' value="Москва">Москва</option>
                                             <option className='header-left__city' value="Питер">Питер</option>
                                             <option className='header-left__city' value="Владивосток">Владивосток</option>

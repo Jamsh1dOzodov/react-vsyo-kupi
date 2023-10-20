@@ -1,0 +1,87 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" id="sidebar_email">
+    <rect width="20" height="21"></rect>
+    <g id=" ÐÐ°Ð½Ð½ÑÐµ ÑÑÐµÑÐ½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸ (ÑÐµÐ´Ð°ÐºÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ)" clip-path="url(#clip0_0_1)">
+      <rect width="1800" height="1404" transform="translate(-361 -331)"></rect>
+      <g id="ÐÐ¾Ð¹ Ð¿ÑÐ¾ÑÐ¸Ð»Ñ">
+        <g id="Group 980">
+          <g id="Group 960">
+            <g id="Rectangle 434" filter="url(#filter0_d_0_1)">
+              <rect x="-16" y="-165" width="255" height="235" rx="5"></rect>
+              <rect x="-15.5" y="-164.5" width="254" height="234" rx="4.5"></rect>
+            </g>
+            <g id="Group 959">
+              <g id="Frame" clip-path="url(#clip1_0_1)">
+                <path id="Vector" d="M15.8341 4.80151H4.16762C3.24716 4.80151 2.50098 5.54769 2.50098 6.46815V14.8014C2.50098 15.7218 3.24716 16.468 4.16762 16.468H15.8341C16.7546 16.468 17.5007 15.7218 17.5007 14.8014V6.46815C17.5007 5.54769 16.7546 4.80151 15.8341 4.80151Z" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Vector_2" d="M2.50098 6.46814L10.0009 11.4681L17.5007 6.46814" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <defs>
+      <filter id="filter0_d_0_1" x="-20" y="-165" width="263" height="243" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dy="4"></feOffset>
+        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.175747 0 0 0 0 0.199192 0 0 0 0 0.220833 0 0 0 0.03 0"></feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"></feBlend>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"></feBlend>
+      </filter>
+      <clipPath id="clip0_0_1">
+        <rect width="1800" height="1404" transform="translate(-361 -331)"></rect>
+      </clipPath>
+      <clipPath id="clip1_0_1">
+        <rect width="19.9997" height="19.9997" transform="translate(0 0.634766)"></rect>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" id="sidebar_favorite">
+    <g clip-path="url(#clip0_20_838)">
+      <path d="M16.2494 11.6719L9.99948 17.8618L3.74958 11.6719C3.33734 11.2707 3.01263 10.7886 2.79589 10.2558C2.57914 9.72297 2.47507 9.15106 2.49021 8.57605C2.50536 8.00105 2.6394 7.43541 2.88389 6.91475C3.12838 6.39409 3.47803 5.92969 3.91082 5.55081C4.3436 5.17192 4.85015 4.88674 5.39856 4.71324C5.94698 4.53973 6.52538 4.48166 7.09734 4.54267C7.6693 4.60369 8.22243 4.78246 8.7219 5.06775C9.22137 5.35304 9.65636 5.73865 9.99948 6.20031C10.3441 5.742 10.7796 5.35976 11.2787 5.0775C11.7778 4.79524 12.3299 4.61904 12.9002 4.55994C13.4706 4.50083 14.047 4.56009 14.5934 4.73399C15.1398 4.9079 15.6444 5.19272 16.0757 5.57062C16.5069 5.94853 16.8556 6.41138 17.0997 6.93021C17.3439 7.44904 17.4783 8.01269 17.4946 8.58587C17.5109 9.15904 17.4088 9.72942 17.1945 10.2613C16.9802 10.7932 16.6585 11.2751 16.2494 11.6769" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_20_838">
+        <rect width="19.9997" height="19.9997" transform="translate(0 0.362305)"></rect>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" id="sidebar_history">
+    <g id="Frame" clip-path="url(#clip0_20_834)">
+      <path id="Vector" d="M10 6.93835V10.2716L11.6666 11.9383" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path id="Vector_2" d="M2.5415 9.43835C2.72824 7.60509 3.58337 5.90475 4.94374 4.66173C6.30411 3.41871 8.0745 2.72002 9.91712 2.69898C11.7597 2.67793 13.5456 3.33599 14.934 4.54762C16.3224 5.75924 17.2162 7.43961 17.4447 9.26813C17.6733 11.0966 17.2207 12.9453 16.1733 14.4614C15.1258 15.9775 13.5569 17.0549 11.7658 17.4881C9.97465 17.9213 8.08676 17.6799 6.46227 16.81C4.83779 15.94 3.59042 14.5025 2.95816 12.7716M2.5415 16.9382V12.7716H6.70811" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_20_834">
+        <rect width="19.9997" height="19.9997" transform="translate(0 0.271484)"></rect>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" id="sidebar_password">
+    <g clip-path="url(#clip0_20_815)">
+      <path d="M14.1654 9.71167H5.83217C4.91171 9.71167 4.16553 10.4579 4.16553 11.3783V16.3782C4.16553 17.2987 4.91171 18.0449 5.83217 18.0449H14.1654C15.0858 18.0449 15.832 17.2987 15.832 16.3782V11.3783C15.832 10.4579 15.0858 9.71167 14.1654 9.71167Z" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M10.0008 14.7116C10.461 14.7116 10.8341 14.3385 10.8341 13.8782C10.8341 13.418 10.461 13.0449 10.0008 13.0449C9.54057 13.0449 9.16748 13.418 9.16748 13.8782C9.16748 14.3385 9.54057 14.7116 10.0008 14.7116Z" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M6.6665 9.71149V6.3782C6.6665 5.49416 7.01769 4.64633 7.6428 4.02122C8.26791 3.39611 9.11574 3.04492 9.99979 3.04492C10.8838 3.04492 11.7317 3.39611 12.3568 4.02122C12.9819 4.64633 13.3331 5.49416 13.3331 6.3782V9.71149" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_20_815">
+        <rect width="19.9997" height="19.9997" transform="translate(0 0.544922)"></rect>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="sidebar_personal">
+    <g clip-path="url(#clip0_20_829)">
+      <path d="M10.0009 17.4998C14.1429 17.4998 17.5007 14.142 17.5007 9.99988C17.5007 5.85781 14.1429 2.5 10.0009 2.5C5.85879 2.5 2.50098 5.85781 2.50098 9.99988C2.50098 14.142 5.85879 17.4998 10.0009 17.4998Z" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M9.99899 10.8332C11.3797 10.8332 12.4989 9.7139 12.4989 8.33321C12.4989 6.95252 11.3797 5.83325 9.99899 5.83325C8.61829 5.83325 7.49902 6.95252 7.49902 8.33321C7.49902 9.7139 8.61829 10.8332 9.99899 10.8332Z" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M5.13916 15.7074C5.34541 15.0209 5.76746 14.4192 6.34268 13.9916C6.9179 13.5639 7.61566 13.333 8.33244 13.3333H11.6657C12.3834 13.333 13.082 13.5644 13.6577 13.9931C14.2333 14.4217 14.6552 15.0247 14.8607 15.7124" stroke-width="1.24998" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_20_829">
+        <rect width="19.9997" height="19.9997" ></rect>
+      </clipPath>
+    </defs>
+  </symbol>
+</svg>
