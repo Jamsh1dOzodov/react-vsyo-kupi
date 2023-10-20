@@ -213,59 +213,6 @@ body {
     //accauntData-persData
     &-persData {
 
-      .group {
-
-        //group__title
-        &__title {
-          color: #181B20;
-          font-size: 14px;
-          font-weight: 400;
-          display: block;
-          margin-bottom: 4px;
-
-          //group__title--red
-          &--red {
-            color: #E7263D;
-            display: inline-block;
-          }
-
-          //group__title--link
-          &--link {
-            color: #3D7BF3;
-            display: inline-block;
-          }
-        }
-
-        //group__input
-        &__input {
-          width: 207px;
-          height: 40px;
-          outline: none;
-          border-radius: 5px;
-          border: 1px solid #CFD9DE;
-          background: #FFF;
-          padding-left: 5px;
-        }
-
-        &--long {
-          margin: 9px 0 16px 0;
-
-          .group__input {
-            width: 446px;
-          }
-        }
-
-        //group--vk
-        &--vk {
-          margin-top: 16px;
-
-          .group__input {
-            width: 437px;
-            padding-left: 14px;
-          }
-        }
-      }
-
       //accauntData-persData__birthday
       &__birthday {
         display: flex;
@@ -329,11 +276,18 @@ body {
             border-radius: 5px;
             background: #3D7BF3;
             border: none;
-            margin-left: 12px;
           }
         }
       }
     }
+  }
+
+  .accauntAddress {
+    padding: 40px 40px 44px 36px;
+    background-color: #FFF;
+    max-width: 41%;
+    flex-basis: 41%;
+    border-radius: 5px;
   }
 
 
@@ -345,7 +299,66 @@ body {
 
 
 
+  .group {
 
+    //group__title
+    &__title {
+      color: #181B20;
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+      margin-bottom: 4px;
+
+      //group__title--red
+      &--red {
+        color: #E7263D;
+        display: inline-block;
+      }
+
+      //group__title--link
+      &--link {
+        color: #3D7BF3;
+        display: inline-block;
+      }
+    }
+
+    //group__input
+    &__input {
+      width: 207px;
+      height: 40px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #CFD9DE;
+      background: #FFF;
+      padding-left: 5px;
+    }
+
+    &--long {
+      margin: 9px 0 16px 0;
+
+      .group__input {
+        width: 439px;
+      }
+    }
+
+    //group--short
+    &--short {
+      margin-bottom: 25px;
+      .group__input {
+        width: 132px;
+      }
+    }
+
+    //group--vk
+    &--vk {
+      margin-top: 16px;
+
+      .group__input {
+        width: 430px;
+        padding-left: 14px;
+      }
+    }
+  }
 
   .empty {
     max-width: 28%;

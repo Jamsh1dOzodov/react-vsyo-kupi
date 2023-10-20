@@ -12,7 +12,7 @@ const Personal = () => {
     return (
         <>
             <Layout>
-                <Breadcrumbs />
+                <Breadcrumbs one='Главная /&nbsp;' two=' Мой профиль /&nbsp;' last=' Данные учетной записи' />
                 <div className='personal'>
                     <div className='container'>
                         <div className='wrapper'>

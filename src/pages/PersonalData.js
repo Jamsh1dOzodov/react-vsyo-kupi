@@ -11,11 +11,11 @@ const PersonalData = () => {
     return (
         <>
             <Layout>
-                <Breadcrumbs />
+                <Breadcrumbs one='Главная /&nbsp;' two=' Мой профиль /&nbsp;' last=' Данные учетной записи' />
                 <div className='personal'>
                     <div className='container'>
                         <div className='wrapper'>
-                            <Sidebar />
+                            <Sidebar active='personal' />
                             <div className='accauntData'>
                                 <h2 className='accauntData__title'>Данные учетной записи</h2>
                                 <div className='accauntData-tit'>
@@ -31,7 +31,7 @@ const PersonalData = () => {
                                         </div>
                                         <div className='group'>
                                             <label className='group__title'>Почта<span className='group__title group__title--red'>*</span></label>
-                                            <input className='group__input' type='text' />
+                                            <input className='group__input' type='email' />
                                         </div>
                                     </div>
                                     <div className='group--long group'>
