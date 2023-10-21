@@ -38,7 +38,7 @@ const Header = () => {
                         </div>
                         <div className="header-right">
                             <div className="wrapper">
-                                <Link className="header-right__favorites" to='#'>
+                                <Link className="header-right__favorites" to='/favorite'>
                                     <img src={favorite} alt="Избранное" />
                                 </Link>
                                 <div className="header-right__basket">
@@ -48,7 +48,7 @@ const Header = () => {
                                     <p className='header-right__basketSum'>99 999 ₽</p>
                                 </div>
                                 <div className="header-right__personal">
-                                    <Link to='#' className="header-right__personalLogo">
+                                    <Link to='/personal' className="header-right__personalLogo">
                                         <img src={personal} alt="Личный кабинет" />
                                     </Link>
                                     <p className='header-right__personalName'>Александр</p>

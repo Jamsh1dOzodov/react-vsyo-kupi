@@ -4,6 +4,9 @@ import ErrorPage from './pages/ErrorPage';
 import Personal from './pages/Personal';
 import PersonalData from './pages/PersonalData';
 import PersonalAddress from './pages/PersonalAddress';
+import PasswordChange from './pages/PasswordChange';
+import Password from './pages/Password';
+import Favorite from './pages/Favorite';
 
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
         <Route path='/personal' element={<Personal />} />
         <Route path='/personaldata' element={<PersonalData />} />
         <Route path='/personaladdress' element={<PersonalAddress />} />
+        <Route path='/passwordchange' element={<PasswordChange />} />
+        <Route path='/password' element={<Password/>} />
+        <Route path='/favorite' element={<Favorite/>} />
       </Routes>
     </BrowserRouter>
   );

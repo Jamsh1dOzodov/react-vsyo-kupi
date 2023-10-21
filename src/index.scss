@@ -10,6 +10,7 @@ ol {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -264,6 +265,7 @@ body {
             border-radius: 5px;
             border: 1px solid #BDCCD4;
             background: #FFF;
+            cursor: pointer;
           }
 
           //btns__save
@@ -276,6 +278,7 @@ body {
             border-radius: 5px;
             background: #3D7BF3;
             border: none;
+            cursor: pointer;
           }
         }
       }
@@ -290,6 +293,53 @@ body {
     border-radius: 5px;
   }
 
+  .passwordchange {
+    padding-bottom: 411px;
+  }
+
+  .passwordinp{
+    padding-bottom: 128px;
+
+    .password__title{
+      margin-bottom: 30px;
+    }
+  }
+
+  .password {
+    background-color: #FFF;
+    padding: 39px 40px 44px 36px;
+    max-width: 41%;
+    flex-basis: 41%;
+    border-radius: 5px;
+
+    //password__title
+    &__title {
+      color: #181B20;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 140.625%;
+    }
+
+    //password__btn
+    &__btn {
+      color: #312D21;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 100%;
+      padding: 9px 10px;
+      border-radius: 5px;
+      border: 1px solid #BDCCD4;
+      background: #FFF;
+    }
+
+    //password__text
+    &__text {
+      color: #181B20;
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 16px;
+    }
+  }
 
 
 
@@ -344,6 +394,7 @@ body {
     //group--short
     &--short {
       margin-bottom: 25px;
+
       .group__input {
         width: 132px;
       }

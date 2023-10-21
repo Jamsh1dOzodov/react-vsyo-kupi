@@ -108,6 +108,23 @@
             width: 24px;
             height: 24px;
             margin-right: 29px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '2';
+                background-color: #FFF;
+                border-radius: 50%;
+                color: #E6263D;
+                text-align: center;
+                font-size: 9px;
+                font-weight: 700;
+                line-height: 110%;
+                width: 10px;
+                height: 10px;
+                right: -3px;
+                top: 2px;
+            }
         }
 
         //header-right__basket
@@ -153,8 +170,9 @@
             line-height: 110%;
             margin-right: 5px;
         }
+
         //header-rigth__personalArrow
-        &__personalArrow{
+        &__personalArrow {
             width: 7px;
             height: 4px;
             display: flex;

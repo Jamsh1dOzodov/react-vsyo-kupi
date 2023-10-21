@@ -10,7 +10,7 @@ const Sidebar = (props) => {
                 <h3 className='sidebar__title'>Мой профиль</h3>
                 <ul className='sidebar-list'>
                     <li className={props.active === 'personal' ? 'sidebar-list__item sidebar-list__item--active' : 'sidebar-list__item'}>
-                        <Link className='sidebar-list__link'>
+                        <Link to='/personal' className='sidebar-list__link'>
                             <svg className="sidebar-list__icon">
                                 <use href={`${sprite}#sidebar_personal`}></use>
                             </svg>
@@ -18,7 +18,7 @@ const Sidebar = (props) => {
                         </Link>
                     </li>
                     <li className={props.active === 'password' ? 'sidebar-list__item sidebar-list__item--active' : 'sidebar-list__item'}>
-                        <Link className='sidebar-list__link'>
+                        <Link to='/passwordchange' className='sidebar-list__link'>
                             <svg className="sidebar-list__icon">
                                 <use href={`${sprite}#sidebar_password`}></use>
                             </svg>

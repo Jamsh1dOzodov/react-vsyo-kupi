@@ -8,10 +8,15 @@ import birthdayImg from '../assets/icons/personal_birthdayImg.svg';
 
 
 const PersonalData = () => {
+    const breadcrumbsList = [
+        {id: 1, text: 'Главная', link: '/'},
+        {id: 2, text: 'Мой профиль', link: '/'},
+        {id: 3, text: 'Данные учетной записи', link: '/', last: true}
+    ]
     return (
         <>
             <Layout>
-                <Breadcrumbs one='Главная /&nbsp;' two=' Мой профиль /&nbsp;' last=' Данные учетной записи' />
+                <Breadcrumbs elements={breadcrumbsList} />
                 <div className='personal'>
                     <div className='container'>
                         <div className='wrapper'>

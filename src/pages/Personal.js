@@ -9,10 +9,15 @@ import map from '../assets/images/personal_map.png'
 
 
 const Personal = () => {
+    const breadcrumbsList = [
+        {id: 1, text: 'Главная', link: '/'},
+        {id: 2, text: 'Мой профиль', link: '/'},
+        {id: 3, text: 'Данные учетной записи', link: '/', last: true}
+    ]
     return (
         <>
             <Layout>
-                <Breadcrumbs one='Главная /&nbsp;' two=' Мой профиль /&nbsp;' last=' Данные учетной записи' />
+                <Breadcrumbs elements={breadcrumbsList} />
                 <div className='personal'>
                     <div className='container'>
                         <div className='wrapper'>
@@ -21,7 +26,7 @@ const Personal = () => {
                                 <h2 className='accaunt__title'>Данные учетной записи</h2>
                                 <div className='accaunt-dataChange'>
                                     <p className='accaunt-dataChange__text'>Персональные данные</p>
-                                    <button className='accaunt-dataChange__btn'>Редактировать</button>
+                                    <Link to='/personaldata' className='accaunt-dataChange__btn'>Редактировать</Link>
                                 </div>
                                 <div className='accaunt-data'>
                                     <p className='accaunt-data__text accaunt-data__text--bold'>ФИО</p>
@@ -50,7 +55,7 @@ const Personal = () => {
 
                                 <div className='accaunt-dataChange accaunt-dataChange--address'>
                                     <p className='accaunt-dataChange__text'>Адрес</p>
-                                    <button className='accaunt-dataChange__btn'>Редактировать</button>
+                                    <Link to='/personaladdress' className='accaunt-dataChange__btn'>Редактировать</Link>
                                 </div>
                                 <p className='accaunt__address'>660000, г. Красноярск, ул. Малая, 44б, корпус 7, строение 2</p>
 
