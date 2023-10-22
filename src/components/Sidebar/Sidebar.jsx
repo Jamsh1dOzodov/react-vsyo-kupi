@@ -26,7 +26,7 @@ const Sidebar = (props) => {
                         </Link>
                     </li>
                     <li className={props.active === 'favorite' ? 'sidebar-list__item sidebar-list__item--active' : 'sidebar-list__item'}>
-                        <Link className='sidebar-list__link'>
+                        <Link to='/favorite' className='sidebar-list__link'>
                             <svg className="sidebar-list__icon">
                                 <use href={`${sprite}#sidebar_favorite`}></use>
                             </svg>
@@ -34,7 +34,7 @@ const Sidebar = (props) => {
                         </Link>
                     </li>
                     <li className={props.active === 'history' ? 'sidebar-list__item sidebar-list__item--active' : 'sidebar-list__item'}>
-                        <Link className='sidebar-list__link'>
+                        <Link to='/history' className='sidebar-list__link'>
                             <svg className="sidebar-list__icon">
                                 <use href={`${sprite}#sidebar_history`}></use>
                             </svg>
@@ -42,7 +42,7 @@ const Sidebar = (props) => {
                         </Link>
                     </li>
                     <li className={props.active === 'email' ? 'sidebar-list__item sidebar-list__item--active' : 'sidebar-list__item'}>
-                        <Link className='sidebar-list__link'>
+                        <Link to='/email' className='sidebar-list__link'>
                             <svg className="sidebar-list__icon">
                                 <use href={`${sprite}#sidebar_email`}></use>
                             </svg>

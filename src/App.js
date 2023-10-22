@@ -7,6 +7,8 @@ import PersonalAddress from './pages/PersonalAddress';
 import PasswordChange from './pages/PasswordChange';
 import Password from './pages/Password';
 import Favorite from './pages/Favorite';
+import History from './pages/History';
+import Email from './pages/Email';
 
 
 function App() {
@@ -19,8 +21,10 @@ function App() {
         <Route path='/personaldata' element={<PersonalData />} />
         <Route path='/personaladdress' element={<PersonalAddress />} />
         <Route path='/passwordchange' element={<PasswordChange />} />
-        <Route path='/password' element={<Password/>} />
-        <Route path='/favorite' element={<Favorite/>} />
+        <Route path='/password' element={<Password />} />
+        <Route path='/favorite' element={<Favorite />} />
+        <Route path='/history' element={<History />} />
+        <Route path='/email' element={<Email />} />
       </Routes>
     </BrowserRouter>
   );
