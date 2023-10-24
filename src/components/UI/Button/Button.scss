@@ -1,0 +1,32 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 100%;
+    font-weight: 500;
+
+    //btn--white
+    &--white {
+        background-color: transparent;
+        color: #312D21;
+        border: 1px solid #BDCCD4;
+        min-width: 91px;
+        font-size: 14px;
+        line-height: 93.75%;
+
+        &:not(:first-child) {
+            margin-top: 7px;
+        }
+    }
+
+    &:disabled,
+    &[disabled] {
+        background-color: #BDCCD4;
+        color: #7C92A8;
+    }
+}
