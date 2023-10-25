@@ -1,13 +1,15 @@
-// .navigation {
-//     padding: 0 188px;
-//     margin-top: 48px;
+// .pagination {
+//   padding: 0 188px;
+//   margin-top: 48px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
 
-//     .wrapper {
-//       align-items: center;
-//     }
+//   //pagination-btn
+//   &-btn {
 
-//     //navigation__btn
-//     &__btn {
+//     //pagination-btn__link
+//     &__link {
 //       width: 40px;
 //       height: 40px;
 //       color: #181B20;
@@ -18,42 +20,48 @@
 //       border: none;
 //       background-color: transparent;
 //       cursor: pointer;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
 
 //       &:hover {
 //         background: #D1DFF9;
+//         transition: 0.4s;
 //       }
+//     }
 
-//       &--active {
-//         color: #FFF;
+//     &--active {
+//       color: #FFF;
+//       background: #3D7BF3;
+
+//       &:hover {
 //         background: #3D7BF3;
-
-//         &:hover {
-//           background: #3D7BF3;
-//         }
 //       }
-//     }
-
-//     //navigation__dots
-//     &__dots {
-//       color: #181B20;
-//       font-size: 20px;
-//       font-weight: 700;
-//     }
-
-//     //navigation__next
-//     &__next {
-//       color: #181B20;
-//       text-align: center;
-//       font-size: 14px;
-//       font-weight: 500;
-//       line-height: 100%;
-//       border-radius: 5px;
-//       border: 1px solid #CFD9DE;
-//       background: #FFF;
-//       padding: 13px 15px;
-//       cursor: pointer;
 //     }
 //   }
+
+
+//   //navigation__dots
+//   &__dots {
+//     color: #181B20;
+//     font-size: 20px;
+//     font-weight: 700;
+//   }
+
+//   //navigation__next
+//   &__next {
+//     color: #181B20;
+//     text-align: center;
+//     font-size: 14px;
+//     font-weight: 500;
+//     line-height: 100%;
+//     border-radius: 5px;
+//     border: 1px solid #CFD9DE;
+//     background: #FFF;
+//     padding: 13px 15px;
+//     cursor: pointer;
+//   }
+// }
 
 .pagination {
   padding: 0 188px;
@@ -61,7 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #F6F8FA;
+  // background-color: #F6F8FA;
 
   //pagination-next
   &-next {

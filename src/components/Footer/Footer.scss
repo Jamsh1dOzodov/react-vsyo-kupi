@@ -60,6 +60,10 @@
             font-weight: 400;
             line-height: 150%;
             margin-top: 4px;
+
+            &:hover {
+                color: #7C92A8;
+            }
         }
     }
 
@@ -70,6 +74,10 @@
         font-weight: 500;
         line-height: 100%;
         display: block;
+
+        &:hover {
+            text-decoration-line: underline;
+        }
 
         &:first-child {
             margin-bottom: 8px;
@@ -84,6 +92,10 @@
         line-height: 100%;
         margin: 24px 0;
         display: block;
+
+        &:hover {
+            text-decoration-line: underline;
+        }
     }
 
     //footer-colSocial
@@ -102,18 +114,39 @@
             border-radius: 5px;
             background: #FFF;
             margin-right: 15px;
+
+            &:hover {
+                background: #BDCCD4;
+            }
         }
 
         //footer-colSocial__insta
         &__insta {
-            width: 24px;
-            height: 24px;
+            width: 25px;
+            height: 25px;
             display: inline-block;
+
+            .icon {
+                fill: #FFF;
+                stroke: #272B31;
+                width: 25px;
+                height: 25px;
+
+                &:hover {
+                    fill: #F86FA0;
+                }
+            }
         }
 
         //footer-colSocial__vk
         &__vk {
             margin-left: 7px;
+
+            &:hover {
+                .icon {
+                    fill: #04A5FF;
+                }
+            }
         }
     }
 
@@ -152,6 +185,10 @@
             font-size: 12px;
             font-weight: 400;
             line-height: 150%;
+
+            &:hover {
+                color: #7C92A8;
+            }
         }
     }
 }

@@ -2,6 +2,7 @@ import './Footer.scss'
 import { Link } from 'react-router-dom';
 import instagram from '../../assets/icons/footer_instagramLogo.svg'
 import vk from '../../assets/icons/footer_vkLogo.svg'
+import sprite from '../../assets/sprites/sprite.svg'
 
 
 
@@ -47,8 +48,16 @@ const Footer = () => {
                             <Link className='footer__colEmail' to='mailto:sales@краснаяцена.рф'>sales@краснаяцена.рф</Link>
                             <div className="footer-colSocial">
                                 <Link className='footer-colSocial__link' to='#'>Сотрудничество</Link>
-                                <Link className='footer-colSocial__insta'><img src={instagram} alt="Инстаграм" /></Link>
-                                <Link className='footer-colSocial__insta footer-colSocial__vk'><img src={vk} alt="ВК" /></Link>
+                                <Link className='footer-colSocial__insta'>
+                                    <svg className="icon">
+                                        <use href={`${sprite}#footer_instagramLogo`}></use>
+                                    </svg>
+                                </Link>
+                                <Link className='footer-colSocial__insta footer-colSocial__vk'>
+                                    <svg className="icon">
+                                        <use href={`${sprite}#footer_vkLogo`}></use>
+                                    </svg>
+                                </Link>
                             </div>
                             <p className='footer__colSchedule'>Заказ товаров без выходных с 9:00 до 22:00</p>
                         </div>

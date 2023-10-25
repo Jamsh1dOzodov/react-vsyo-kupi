@@ -3,10 +3,12 @@ import Layout from '../components/Layout/Layout';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Table from '../components/Table/Table';
 import Pagination from '../components/Pagination/Pagination';
-import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState } from 'react';
 import ReactPaginate from 'react-paginate';
-import Favorites from '../components/Pagination/Pagination'
+import '../components/Pagination/Pagination.scss';
+
+
+
 
 
 const Favorite = () => {
@@ -16,7 +18,7 @@ const Favorite = () => {
         { id: 2, text: 'Избранное', link: '/', last: true }
     ]
 
-    const favorites = [
+    const cards = [
         { id: 1, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '29 990', discount_price: '23 990' },
         { id: 2, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
         { id: 3, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
@@ -47,7 +49,55 @@ const Favorite = () => {
         { id: 28, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
         { id: 29, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
         { id: 30, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 31, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '29 990', discount_price: '23 990' },
+        { id: 32, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '29 990', discount_price: '23 990' },
+        { id: 33, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 34, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 35, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 36, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 37, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 38, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 39, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 40, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 41, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '29 990', discount_price: '23 990' },
+        { id: 42, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 43, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '29 990', discount_price: '23 990' },
+        { id: 44, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 45, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 46, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 47, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 48, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 49, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
+        { id: 50, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
     ]
+
+    // const [currentPage, setCurrentPage] = useState(1)
+    // const [cardsPerPage, setCardsPerPage] = useState(10)
+
+    // const indexOfLastCard = currentPage * cardsPerPage;
+    // const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+    // const currentCards = cards.slice(indexOfFirstCard, indexOfLastCard);
+
+    // const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+
+
+
+    const [itemOffset, setItemOffset] = useState(0);
+    const endOffset = itemOffset + 5;
+    // console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+    const currentItems = cards.slice(itemOffset, endOffset);
+    const pageCount = Math.ceil(cards.length / 5);
+
+    const handlePageClick = (event) => {
+        const newOffset = (event.selected * 5) % cards.length;
+        // console.log(
+        //     `User requested page number ${event.selected}, which is offset ${newOffset}`
+        // );
+        setItemOffset(newOffset);
+    };
+
+
 
     return (
         <>
@@ -66,16 +116,35 @@ const Favorite = () => {
                                         <th className='titles__text titles__text--last'>Действия</th>
                                     </tr>
                                 </thead>
-                                <tbody id='container'>
-                                    {favorites &&
-                                        favorites.map(favorite =>
+                                <tbody>
+                                    {/* {currentCards &&
+                                        currentCards.map(favorite =>
                                             <Table key={favorite.id} id={favorite.id} name={favorite.name} src={favorite.src} stock_price={favorite.stock_price} discount_price={favorite.discount_price} />
                                         )
-                                    }
-                                    {/* <Pagination /> */}
-
+                                    } */}
+                                    <Table currentItems={currentItems} />
                                 </tbody>
                             </table>
+                            {/* <Pagination cardsPerPage={cardsPerPage} totalCards={cards.length} paginate={paginate} /> */}
+
+                            <ReactPaginate
+                                itemsPerPage={5}
+                                containerClassName="pagination"
+                                breakLabel="..."
+                                nextLabel="Дальше"
+                                nextLinkClassName="pagination-next"
+                                previousLabel="prev"
+                                previousClassName="pagination-prev"
+                                onPageChange={handlePageClick}
+                                pageRangeDisplayed={5}
+                                pageCount={pageCount}
+                                marginPagesDisplayed={1}
+                                renderOnZeroPageCount={null}
+                                activeClassName="active"
+                                breakClassName="pagination-break"
+                                pageClassName="pagination-page"
+                                pageLinkClassName="pagination-page__link"
+                            />
                         </div>
                     </div>
                 </div>

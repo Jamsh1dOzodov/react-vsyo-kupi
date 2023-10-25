@@ -25,17 +25,16 @@ const History = () => {
                         <Sidebar active='history' />
                         <div className='history'>
                             <h3 className='history__title'>История заказов</h3>
-                            <Accordion paid={false}/>
-                            <Accordion paid={true}/>
-                            <Accordion paid={true}/>
-                            <Accordion paid={true}/>
-                            <Accordion paid={true}/>
-                            <Accordion paid={true}/>
-                            <Accordion paid={true}/>
-                            <Accordion paid={true}/>
-                            <Accordion paid={true}/>
-                            <Accordion paid={true}/>
-                            <Pagination />
+                            <Accordion paid={false} />
+                            <Accordion paid={true} />
+                            <Accordion paid={true} />
+                            <Accordion paid={true} />
+                            <Accordion paid={true} />
+                            <Accordion paid={true} />
+                            <Accordion paid={true} />
+                            <Accordion paid={true} />
+                            <Accordion paid={true} />
+                            <Accordion paid={true} />
                         </div>
                     </div>
                 </div>
