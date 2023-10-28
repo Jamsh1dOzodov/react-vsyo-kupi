@@ -7,9 +7,26 @@ import favorite from '../../assets/icons/header_favorite.svg'
 import backet from '../../assets/icons/header_basket.svg'
 import personal from '../../assets/icons/header_personal.svg'
 import emptyArrow from '../../assets/icons/header_emptyArrowDown.svg'
+import { useState } from 'react';
+import { useContext } from 'react';
+import { AuthContext } from '../../context/context';
 
 
 const Header = () => {
+
+    const { isAuth, setIsAuth } = useContext(AuthContext)
+
+    const logged = () => {
+        if (localStorage.getItem('isAuth') === 'true') {
+            localStorage.setItem('isAuth', false)
+            return setIsAuth(false)
+        }
+        setIsAuth(true)
+        return localStorage.setItem('isAuth', true)
+    }
+
+
+
     return (
         <>
             <header className='header'>
@@ -30,10 +47,11 @@ const Header = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <form className='header-left__form'>
-                                    <input className='header-left__search' type="text" placeholder='Введите название товара' />
-                                    <button type='submit' className='header-left__searchBtn'><img src={lupa} alt="" /></button>
-                                </form>
+                                {/* <form className='header-left__form'> */}
+                                {/* <input className='header-left__search' type="text" placeholder='Введите название товара' />
+                                    <button type='submit' className='header-left__searchBtn'><img src={lupa} alt="" /></button> */}
+                                <button onClick={logged}>{isAuth ? 'Выйти' : "Войти"}</button>
+                                {/* </form> */}
                             </div>
                         </div>
                         <div className="header-right">

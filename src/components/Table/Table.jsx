@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "../UI/Button/Button";
 
-const Table = ({ currentItems, name, src, stock_price, discount_price }) => {
+const Table = ({ currentItems, id, name, src, stock_price, discount_price }) => {
 
     const [inbasket, setInbasket] = useState(false)
     const basketIn = () => {
@@ -17,7 +17,7 @@ const Table = ({ currentItems, name, src, stock_price, discount_price }) => {
 
     return (
         <>
-            {currentItems &&
+            {/* {currentItems &&
                 currentItems.map(item =>
                     <tr key={item.id} className='table-middle'>
                         <td className='table-middle__image image'>
@@ -41,14 +41,14 @@ const Table = ({ currentItems, name, src, stock_price, discount_price }) => {
                         </td>
                     </tr>
                 )
-            }
+            } */}
 
 
 
 
 
 
-            {/* <tr className='table-middle'>
+            <tr className='table-middle'>
                 <td className='table-middle__image image'>
                     <div className='image__img'><img src={src} /></div>
                 </td>
@@ -68,7 +68,7 @@ const Table = ({ currentItems, name, src, stock_price, discount_price }) => {
                     <Button className='btn btn--white' disabled={inbasket} onClick={basketIn}>{inbasket ? 'В корзине' : 'В корзину'}</Button>
                     <Button className='btn btn--white' onClick={deleteBtn}>Удалить</Button>
                 </td>
-            </tr> */}
+            </tr>
         </>
 
     )

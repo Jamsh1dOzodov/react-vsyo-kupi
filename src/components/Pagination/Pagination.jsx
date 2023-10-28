@@ -1,42 +1,43 @@
-// import React from "react";
-// import './Pagination.scss'
+import React from "react";
+import './Pagination.scss'
 
 
-// const Pagination = ({cardsPerPage, totalCards, paginate}) => {
+const Pagination = ({cardsPerPage, totalCards, paginate, next}) => {
 
-//     const pageNumbers = []
+    const pageNumbers = []
 
-//     for(let i = 1; i <= Math.ceil(totalCards / cardsPerPage); i++){
-//         pageNumbers.push(i)
-//     }
+    for(let i = 1; i <= Math.ceil(totalCards / cardsPerPage); i++){
+        pageNumbers.push(i)
+    }
 
-//     // const paginate = () => {
+    // const paginate = () => {
 
-//     // }
+    // }
 
-//     return(
-//         <>
-//             <ul className="pagination">
-//                 {pageNumbers.map(number => (
-//                     <li key={number} className='pagination-btn'>
-//                         <a onClick={() => paginate(number)} className="pagination-btn__link" href="#">
-//                             {number}
-//                         </a>
-//                     </li>
-//                 ))}
-//             </ul>
-//         </>
-//     )
-// }
-
-
-// export default Pagination;
+    return(
+        <>
+            <ul className="pagination">
+                {pageNumbers.map(number => (
+                    <li key={number} className='pagination-btn'>
+                        <a onClick={() => paginate(number)} className="pagination-btn__link" href="#">
+                            {number}
+                        </a>
+                    </li>
+                ))}
+                <button type="button" onClick={next} className="pagination__next">Далее</button>
+            </ul>
+        </>
+    )
+}
 
 
+export default Pagination;
 
-import ReactPaginate from 'react-paginate';
-import './Pagination.scss';
-import React, { useEffect, useState } from 'react';
+
+
+// import ReactPaginate from 'react-paginate';
+// import './Pagination.scss';
+// import React, { useEffect, useState } from 'react';
 
 
 

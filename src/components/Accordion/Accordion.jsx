@@ -4,10 +4,9 @@ import React, { useState } from 'react'
 
 
 
-const Accordion = ({ paid }) => {
+const Accordion = ({ paid, order, orders, priceDelivery, discount, sum, deliveryMethod, receivingDate, reserveDate, payMethod, address }) => {
 
     const [open, setOpen] = useState(false)
-
     const accordion = (event) => {
         if (!event.target.classList.contains('top-rightCol__btn')) {
             if (open) {
@@ -20,7 +19,7 @@ const Accordion = ({ paid }) => {
     return (
         <div className='history-accordion'>
             <div onClick={accordion} className={paid ? 'history-accordion__top history-accordion__top--paid top' : 'history-accordion__top top'}>
-                <h4 className='top__title'>Заказ № 16894</h4>
+                <h4 className='top__title'>Заказ № {order}</h4>
                 <div className='top-rightCol'>
                     <button className='top-rightCol__btn'>Оплатить</button>
                     <span className='top-rightCol__status'>{paid ? 'Доставлен' : 'Не оплачен'}</span>
@@ -28,6 +27,7 @@ const Accordion = ({ paid }) => {
                 </div>
             </div>
             <div className={open ? 'history-accordion__middle history-accordion__middle--open middle' : 'history-accordion__middle middle'}>
+
                 <table className='middle-table'>
                     <thead className='middle-table__head head'>
                         <tr className='head-titles'>
@@ -37,50 +37,21 @@ const Accordion = ({ paid }) => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className='middle-table__mid mid'>
-                            <td className='mid-name'>
-                                <p className='mid-name__text'>Видеокарта MSI / ASUS gtx1650 / super / 1050ti</p>
-                            </td>
-                            <td className='mid-count'>
-                                <p className='mid-count__text'>1</p>
-                            </td>
-                            <td className='mid-price'>
-                                <p className='mid-price__text'>72 420₽</p>
-                            </td>
-                        </tr>
-                        <tr className='middle-table__mid mid'>
-                            <td className='mid-name'>
-                                <p className='mid-name__text'>Видеокарта MSI / ASUS gtx1650 / super / 1050ti так будет выглядеть если больше...</p>
-                            </td>
-                            <td className='mid-count'>
-                                <p className='mid-count__text'>165</p>
-                            </td>
-                            <td className='mid-price'>
-                                <p className='mid-price__text'>100 172 420₽</p>
-                            </td>
-                        </tr>
-                        <tr className='middle-table__mid mid'>
-                            <td className='mid-name'>
-                                <p className='mid-name__text'>Видеокарта MSI / ASUS gtx1650 / super / 1050ti</p>
-                            </td>
-                            <td className='mid-count'>
-                                <p className='mid-count__text'>2</p>
-                            </td>
-                            <td className='mid-price'>
-                                <p className='mid-price__text'>72 420₽</p>
-                            </td>
-                        </tr>
-                        <tr className='middle-table__mid mid'>
-                            <td className='mid-name'>
-                                <p className='mid-name__text'>Видеокарта MSI / ASUS gtx1650 / super / 1050ti</p>
-                            </td>
-                            <td className='mid-count'>
-                                <p className='mid-count__text'>2</p>
-                            </td>
-                            <td className='mid-price'>
-                                <p className='mid-price__text'>72 420₽</p>
-                            </td>
-                        </tr>
+                        {orders &&
+                            orders.map(order =>
+                                <tr key={order.id} className='middle-table__mid mid'>
+                                    <td className='mid-name'>
+                                        <p className='mid-name__text'>{order.name}</p>
+                                    </td>
+                                    <td className='mid-count'>
+                                        <p className='mid-count__text'>{order.count}</p>
+                                    </td>
+                                    <td className='mid-price'>
+                                        <p className='mid-price__text'>{order.price}₽</p>
+                                    </td>
+                                </tr>
+                            )
+                        }
                     </tbody>
                 </table>
                 <table className='middle-summary'>
@@ -90,7 +61,7 @@ const Accordion = ({ paid }) => {
                                 <p className='delivery__text'>Стоимость доставки</p>
                             </td>
                             <td className='middle-summary__delivery middle-summary__delivery--right delivery'>
-                                <p className='delivery__price'>450 ₽</p>
+                                <p className='delivery__price'>{priceDelivery} ₽</p>
                             </td>
                         </tr>
                         <tr>
@@ -98,7 +69,7 @@ const Accordion = ({ paid }) => {
                                 <p className='discount__text'>Скидка</p>
                             </td>
                             <td className='middle-summary__discount middle-summary__discount--right discount'>
-                                <p className='discount__price'>- 300 ₽</p>
+                                <p className='discount__price'>- {discount} ₽</p>
                             </td>
                         </tr>
                         <tr>
@@ -106,7 +77,7 @@ const Accordion = ({ paid }) => {
                                 <p className='sum__text'>Итого</p>
                             </td>
                             <td className='middle-summary__sum middle-summary__sum--right sum'>
-                                <p className='sum__price'>72 420₽</p>
+                                <p className='sum__price'>{sum}₽</p>
                             </td>
                         </tr>
                     </tbody>
@@ -118,7 +89,7 @@ const Accordion = ({ paid }) => {
                                 <p className='info__text'>Способ получения</p>
                             </td>
                             <td className='middle-delivery__info middle-delivery__info--right info'>
-                                <p className='info__text info__text--light'>Доставка по адресу</p>
+                                <p className='info__text info__text--light'>{deliveryMethod}</p>
                             </td>
                         </tr>
                         <tr>
@@ -126,7 +97,7 @@ const Accordion = ({ paid }) => {
                                 <p className='info__text'>Дата получения</p>
                             </td>
                             <td className='middle-delivery__info middle-delivery__info--right info'>
-                                <p className='info__text info__text--light'>Вторник, 14.12.2021 с 09:00 до 15:00</p>
+                                <p className='info__text info__text--light'>{receivingDate}</p>
                             </td>
                         </tr>
                         <tr>
@@ -134,7 +105,7 @@ const Accordion = ({ paid }) => {
                                 <p className='info__text'>В резерве до</p>
                             </td>
                             <td className='middle-delivery__info middle-delivery__info--right info'>
-                                <p className='info__text info__text--light'>Суббота, 18.12.2021 21:00 </p>
+                                <p className='info__text info__text--light'>{reserveDate}</p>
                             </td>
                         </tr>
                         <tr>
@@ -142,7 +113,7 @@ const Accordion = ({ paid }) => {
                                 <p className='info__text'>Метод оплаты</p>
                             </td>
                             <td className='middle-delivery__info middle-delivery__info--right info'>
-                                <p className='info__text info__text--light'>Оплата курьеру</p>
+                                <p className='info__text info__text--light'>{payMethod}</p>
                             </td>
                         </tr>
                         <tr>
@@ -150,7 +121,7 @@ const Accordion = ({ paid }) => {
                                 <p className='info__text'>Адрес</p>
                             </td>
                             <td className='middle-delivery__info middle-delivery__info--right info'>
-                                <p className='info__text info__text--light'>660000, г. Красноярск, ул. Малая, 44б, корпус 7, строение 2</p>
+                                <p className='info__text info__text--light'>{address}</p>
                             </td>
                         </tr>
                     </tbody>

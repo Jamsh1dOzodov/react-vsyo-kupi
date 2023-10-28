@@ -71,31 +71,31 @@ const Favorite = () => {
         { id: 50, name: 'Видеокарта MSI / ASUS gtx1650 / super / 1050ti', src: '/static/media/favorite_videocard.a0597a498824b74ac805.png', stock_price: '23 990' },
     ]
 
-    // const [currentPage, setCurrentPage] = useState(1)
-    // const [cardsPerPage, setCardsPerPage] = useState(10)
+    const [currentPage, setCurrentPage] = useState(1)
+    const [cardsPerPage, setCardsPerPage] = useState(10)
 
-    // const indexOfLastCard = currentPage * cardsPerPage;
-    // const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-    // const currentCards = cards.slice(indexOfFirstCard, indexOfLastCard);
+    const indexOfLastCard = currentPage * cardsPerPage;
+    const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+    const currentCards = cards.slice(indexOfFirstCard, indexOfLastCard);
 
-    // const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 
-    const [itemOffset, setItemOffset] = useState(0);
-    const endOffset = itemOffset + 5;
-    // console.log(`Loading items from ${itemOffset} to ${endOffset}`);
-    const currentItems = cards.slice(itemOffset, endOffset);
-    const pageCount = Math.ceil(cards.length / 5);
 
-    const handlePageClick = (event) => {
-        const newOffset = (event.selected * 5) % cards.length;
-        // console.log(
-        //     `User requested page number ${event.selected}, which is offset ${newOffset}`
-        // );
-        setItemOffset(newOffset);
-    };
+
+    // const [itemOffset, setItemOffset] = useState(0);
+    // const endOffset = itemOffset + 5;
+    // // console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+    // const currentItems = cards.slice(itemOffset, endOffset);
+    // const pageCount = Math.ceil(cards.length / 5);
+
+    // const handlePageClick = (event) => {
+    //     const newOffset = (event.selected * 5) % cards.length;
+    //     // console.log(
+    //     //     `User requested page number ${event.selected}, which is offset ${newOffset}`
+    //     // );
+    //     setItemOffset(newOffset);
+    // };
 
 
 
@@ -117,17 +117,17 @@ const Favorite = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {/* {currentCards &&
+                                    {currentCards &&
                                         currentCards.map(favorite =>
                                             <Table key={favorite.id} id={favorite.id} name={favorite.name} src={favorite.src} stock_price={favorite.stock_price} discount_price={favorite.discount_price} />
                                         )
-                                    } */}
-                                    <Table currentItems={currentItems} />
+                                    }
+                                    {/* <Table currentItems={currentItems} /> */}
                                 </tbody>
                             </table>
-                            {/* <Pagination cardsPerPage={cardsPerPage} totalCards={cards.length} paginate={paginate} /> */}
+                            <Pagination cardsPerPage={cardsPerPage} totalCards={cards.length} paginate={paginate} />
 
-                            <ReactPaginate
+                            {/* <ReactPaginate
                                 itemsPerPage={5}
                                 containerClassName="pagination"
                                 breakLabel="..."
@@ -144,7 +144,7 @@ const Favorite = () => {
                                 breakClassName="pagination-break"
                                 pageClassName="pagination-page"
                                 pageLinkClassName="pagination-page__link"
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>
